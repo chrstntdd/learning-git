@@ -1,0 +1,5 @@
+### What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches allows the changes between both files to be combined in a commit like fashion. This in turn means that the commit history thats accessed by ```git log``` will contain the commits from both branches sorted by timestamp. Dealing with this new format of commit history now becomes tricky when performing ```git diff``` between different commits. Since our history now contains an interweaved commit history between two branches trying to find the id of the commit before it (parent) can be particularly challenging. To solve this obvious roadblock, git comes with the command ```git show``` which takes a single id as an argument and returns the ```git diff``` of the argument commit id and its parent.
+
+We represent the merging of two branches as a new commit. In a merge, the commit created will be a child of **BOTH** the branches being merged. This inheritence binding allows us to retain our entire commit history between out branches.
