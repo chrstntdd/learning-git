@@ -1,0 +1,3 @@
+### Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Pulling changes manually allows the user to be in control of the version of the remote repository that is being worked on. For instance, lets say two users are contributing to the same remote repository. User A is working on ```file1.js``` and coincidentally, so is User B. If User A pushes their changes to the repo and the changes were pulled down automaticall by User B, all of their progress would be lost and User B would be out of luck. With manual pulls, each user will be able to work on their own copy separately and decide when they will pull down the most current version of the repo.
